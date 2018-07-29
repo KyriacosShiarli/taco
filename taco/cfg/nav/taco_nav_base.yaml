@@ -1,0 +1,30 @@
+# Configuration file for TAC temporal alignment for control.
+
+epochs: 400
+lr: 0.005
+batch_size : 10
+nb_datapoints: -1 # number of datapoints from the dataset
+plot: False # plot a few of the segmentations.
+units : [100] # units in the architecture
+architecture: mlp # architecture for policy or CTC
+algorithm: tac # algorithm CTC,TAC or STAC
+test_size: 100
+gpu: False
+image: False
+mlp_complex: True # use an additional MLP on top of RNNs when doing STAC or TAC
+entropy_reg: 0. # Regularise the classifiers. Not useful for toy settings.
+discrete: False # Action space discrete or not
+action_noise: 0.00 # Action noise, useful when continuous and not toy
+normalise_actions: True # States are always normalised, actions choose from here.
+dropout: 1.
+dropout_decay: 1.000
+gaps: False # use gaps in the CTC. Suggested: False
+
+ctc-il: # parameters for the imitation network of the CTC-IL method. not used during TAC
+ dropout: 1
+ epochs: 300
+ architecture: mlp
+ units: [100]
+ lr: 0.01
+
+

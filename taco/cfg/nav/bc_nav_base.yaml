@@ -1,0 +1,12 @@
+# Configuration file for TAC temporal alignment for control.
+epochs: 200
+lr: 0.005
+nb_datapoints: -1 # number of datapoints from the dataset
+units : [100] # units in the architecture
+image : False
+architecture: mlp # architecture for behavioral cloning
+batch_proportion: 0.3
+discrete: False # Action space discrete or not
+l2_reg: 0.00000
+
+

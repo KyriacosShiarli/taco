@@ -1,0 +1,12 @@
+architecture: mlp
+discrete: false
+epochs: 400
+lr: 0.005
+nb_datapoints: -1 # number of datapoints from the dataset
+units : [300,200,100] # units in the architecture
+architecture: mlp # architecture for behavioral cloning
+batch_proportion: 0.1
+discrete: False # Action space discrete or not
+image: False
+gpu: 1
+l2_reg: 0.00002

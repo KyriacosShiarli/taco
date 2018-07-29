@@ -1,0 +1,11 @@
+# Configuration file for BC.
+epochs: 200
+lr: 0.0005
+nb_datapoints: -1 # number of datapoints from the dataset
+units : [400,100] # units in the architecture
+architecture: mlp # architecture for behavioral cloning
+discrete: False # Action space discrete or not
+batch_proportion: 0.03
+image: conv_layers_10_5_3
+gpu: 4
+l2_reg: 0.00002
