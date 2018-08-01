@@ -31,7 +31,7 @@ To run using the example dataset use
 
 ```
 
-python3 experiment_launch.py reprocuce_taco nav taco dataset_04.p -c taco_nav_base.yaml -n 400
+python3 experiment_launch.py reproduce_taco nav taco dataset_04.p -c taco_nav_base.yaml -n 400
 
 ```    
 
@@ -42,7 +42,7 @@ After training is finished:
 
 ```
 
-python3 evaluation.py reproduce_taco nav 
+python3 evaluation.py ../results/reproduce_taco nav 
 
 ```    
 
