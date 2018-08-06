@@ -13,7 +13,7 @@ You can also collect your own dataset from these domains.
 
 For NavWorld:
 ```
-	python3 nav_world.py collect [dataset_dir] -n 1000
+	python3 nav_world.py [dataset_name] -n 1000
 ```
 For Dial:
 ```
