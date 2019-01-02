@@ -4,8 +4,7 @@ Viewer for MuJoCo which supports taking keyboard input to control the simulation
 """
 from concurrent.futures import ThreadPoolExecutor
 
-#from jaco_grasping.irl.irl_model import IrlModel
-from jaco_grasping.mujoco_tools.screenshot_taker import ScreenshotTaker
+from screenshot_taker import ScreenshotTaker
 from mujoco_py import MjViewer
 from mujoco_py.generated import const
 
